@@ -9,51 +9,37 @@
 using namespace std;
 
 int main() {
-	int  n1, n2;
 
-	cout << "enter size of first array" << endl;
-	cin >> n1;
+    int* a = NULL;
+    int* b = NULL;
+    int* c = NULL;
 
-	int* a = new int[n1];
-	cout << "Enter elements of first array:" << endl;
-	for (int i = 0; i < n1; i++) {
-		cin >> a[i];
-	}
-	cout << "enter the size of second array" << endl;
-	cin >> n2;
-	int* b = new int[n2];
-	cout << "Enter elements of second array:" << endl;
-	for (int j = 0; j < n2; j++) {
-		cin >> b[j];
-	}
-	int m = max(n1, n2);
-	int* ans = new int(m);
-	int i = n1 - 1;
-	int j = n2 - 1;
-	int k = m - 1;
-	int carry = 0;
+    int  n;
+    cout << "enter the number:";
+    cin >> n;
 
-	while (k >= 0) {
-		cout << "sum of elements of the arrays: ";
-		int c = a[i] + b[j] + carry;
-		
-		int q = c / 10;
-		int r = c % 10;
-		ans[k] = r;
-		carry = q;
-		i--;
-		j--;
-		k--;
+    a = new int[n];
+    b = new int[n];
+    c = new int[n];
 
-	}
-	if (carry != 0) {
-		cout <<carry<< endl;
+    cout << "Enter elements into array A\n";
+    for (int index = 0; index < n; index++) 
+        cin >> a[index];
+    
+    cout << "Enter elelments into array B\n";
+    for (int index = 0; index < n; index++) 
+        cin >> b[index];
+    
 
-	}
-	for (i = 0; i < m; i++) {
-		cout << ans[i] << endl;
-	}
 
-	return 0;
-}
+    for (int index = 0; index < n; index++) 
+        c[index] = a[index] + b[index];
+
+        cout << "Array A\t\t Array B \t\t  Array C\n" << endl;
+    for (int index = 0; index < 0; index++) 
+        cout << "\t" << a[index] << "t\t\t" << b[index] << "t\t\t" << c[index] << endl;
+    
+         return 0;
+         }
+
 
