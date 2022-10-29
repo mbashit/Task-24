@@ -1,9 +1,10 @@
-// Task 24.cpp : This file contains the 'main' function. Program execution begins and ends there.
+﻿// Task 24.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-/*Two arrays of integers A and B are given, containing n elements each.
-Send to array C first the values of the elements of the array, where there are more
-elements with the maximum sum of digits, then the values of the elements of another
-array.*/
+/*60. Пусть дана вещественная матрица порядка
+m n  ,
+все элементы
+которой различны. Переставить ее строки и столбцы так, чтобы ее
+наибольший элемент оказался в левом верхнем углу.*/
 
 #include <iostream>
 using namespace std;
