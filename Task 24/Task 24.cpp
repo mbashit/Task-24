@@ -62,6 +62,10 @@ int main()
         cout << C[i] << " ";
     }
     cout << endl;
+    // Free up the memory
+    delete[] A;
+    delete[] B;
+    delete[] C;
 }
 
 void enter_array_values(int* array, int size)
